@@ -27,7 +27,7 @@
     var price = [], colors = [], labels = [];
     <% @items.each_with_index do |item, idx| %>
       price.push(<%= item.price %>);
-      lavels.push('<%= item.title %>');
+      labels.push('<%= item.title %>');
       colors.push(clr[<%= idx % 6 %>]);
     <% end %>
     var data = {
